@@ -19,7 +19,7 @@ function Categories(){
     const List = ({data}) => {
         return(
             <div>
-                <h1>All Categories hello</h1>
+                <h1>All Categories</h1>
                 <ul>
                 {data.map(item => (
                         <li key={item.shortcode}>
@@ -36,7 +36,7 @@ function Categories(){
 
     return (
         <div>
-            <List data={data} />
+            {List({data})};
         </div>
     );
 }
